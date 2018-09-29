@@ -1,0 +1,33 @@
+{
+  "name": "unified-test",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkunin/unified-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkunin/unified-test/issues"
+  },
+  "scripts": {
+    "test": "echo test",
+    "start": "node ./",
+    "dev": "node ./",
+    "build": "NODE_ENV=production node ./"
+  },
+  "homepage": "https://github.com/dkunin/unified-test",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "remark": "9.0.0",
+    "remark-html": "8.0.0",
+    "remark-parse": "5.0.0",
+    "remark-preset-lint-markdown-style-guide": "2.1.2",
+    "remark-rehype": "3.0.1",
+    "unified": "7.0.0",
+    "unified-lint-rule": "1.0.3",
+    "unified-stream": "1.0.2",
+    "vfile-reporter": "5.0.0"
+  }
+}
