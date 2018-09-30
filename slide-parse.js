@@ -1,3 +1,5 @@
+'use strict';
+
 function locateMention(value, fromIndex) {
   return value.indexOf('===', fromIndex);
 }
@@ -21,17 +23,13 @@ function tokenSlideSeparator(eat, value, silent) {
 }
 
 
-function mentions() {
+function slideParse() {
   var Parser = this.Parser;
   var tokenizers = Parser.prototype.inlineTokenizers;
   var methods = Parser.prototype.inlineMethods;
-
-  /* Add an inline tokenizer (defined in the following example). */
-  tokenizers.mention = tokenSlideSeparator;
-
-  /* Run it just before `text`. */
-  methods.splice(methods.indexOf('text'), 0, 'mention');
+  tokenizers.slideParse = tokenSlideSeparator;
+  methods.splice(methods.indexOf('text'), 0, 'slideParse');
 }
 
 
-module.exports = mentions;
+module.exports = slideParse;
