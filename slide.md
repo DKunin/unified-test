@@ -1,11 +1,13 @@
-
 ===
-==
-=
+
+class: normal
 
 asdasd
 
 # asdasd
-@dkunin
+
+===
+
+class: 
 
 ===

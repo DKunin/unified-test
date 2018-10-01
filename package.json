@@ -24,10 +24,12 @@
     "remark-html": "8.0.0",
     "remark-parse": "5.0.0",
     "remark-preset-lint-markdown-style-guide": "2.1.2",
-    "remark-rehype": "3.0.1",
     "unified": "7.0.0",
     "unified-lint-rule": "1.0.3",
-    "unified-stream": "1.0.2",
+    "unist-util-visit": "1.4.0",
     "vfile-reporter": "5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.6.1"
   }
 }
