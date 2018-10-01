@@ -11,7 +11,7 @@ const noEmptyClassListRule = require('./no-empty-class-list-rule');
 const fs = require('fs');
 const slides = fs.readFileSync('./slide.md').toString();
 
-const extraRule = rule('remark-lint:no-file-name-mixed-case', noEmptyClassListRule);
+const extraRule = rule('remark-lint:no-empty-class-list-rule', noEmptyClassListRule);
 
 guide.plugins = guide.plugins.concat(extraRule);
 
